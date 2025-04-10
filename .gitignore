@@ -50,3 +50,6 @@ playground.xcworkspace
 *.exe
 *.out
 *.app
+
+# Support for non-xcode editors using xcode-build-server
+buildServer.json

@@ -1,0 +1,59 @@
+enum NodeType : byte {
+  Building,
+  Room,
+  Hallway,
+  Entrance,
+  Stairs,
+  Elevator,
+  CafeArea,
+  StudySpace,
+  OutdoorPath
+}
+
+table Coordinates {
+  x: float;
+  y: float;
+  z: float;
+}
+
+table NodeAttributes {
+  wheelchair_accessible: bool = false;
+  capacity: int = 0;
+  indoor: bool = true;
+  restricted_access: bool = false;
+  ar_anchor_id: string;
+}
+
+table Node {
+  id: string (key);
+  name: string;
+  type: NodeType;
+  coordinates: Coordinates;
+  floor: int = 0;
+  attributes: NodeAttributes;
+}
+
+table EdgeAttributes {
+  indoor: bool = true;
+  stairs_count: int = 0;
+  crowded_during_peaks: bool = false;
+  wheelchair_accessible: bool = true;
+  covered: bool = true;
+}
+
+table Edge {
+  source_id: string;
+  target_id: string;
+  distance: float;
+  avg_time: int;
+  attributes: EdgeAttributes;
+}
+
+table CampusMap {
+  name: string;
+  nodes: [Node];
+  edges: [Edge];
+  version: string;
+}
+
+root_type CampusMap;
