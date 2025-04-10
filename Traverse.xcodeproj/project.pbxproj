@@ -6,9 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C09CAB152DA7D8CF006C6BFA /* FlatBuffers in Frameworks */ = {isa = PBXBuildFile; productRef = C09CAB142DA7D8CF006C6BFA /* FlatBuffers */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		C00CC8BB2DA6D2F700721C48 /* Traverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01B45702DA9474D00B5A57E /* Traverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C01B45712DA9477700B5A57E /* Exceptions for "include" folder in "Traverse" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				.gitattributes,
+			);
+			target = C00CC8BA2DA6D2F700721C48 /* Traverse */;
+		};
+		C0B1D7322DA8221E00589571 /* Exceptions for "data" folder in "Traverse" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				Spec.fbs,
+			);
+			target = C00CC8BA2DA6D2F700721C48 /* Traverse */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C00CC8BD2DA6D2F700721C48 /* src */ = {
@@ -18,11 +40,17 @@
 		};
 		C00CC8D12DA6D9A300721C48 /* data */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C0B1D7322DA8221E00589571 /* Exceptions for "data" folder in "Traverse" target */,
+			);
 			path = data;
 			sourceTree = "<group>";
 		};
 		C0FF58B12DA7AE8E00A7A2BA /* include */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C01B45712DA9477700B5A57E /* Exceptions for "include" folder in "Traverse" target */,
+			);
 			path = include;
 			sourceTree = "<group>";
 		};
@@ -33,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09CAB152DA7D8CF006C6BFA /* FlatBuffers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,17 +73,9 @@
 			children = (
 				C0FF58B12DA7AE8E00A7A2BA /* include */,
 				C00CC8BD2DA6D2F700721C48 /* src */,
-				C00CC8BC2DA6D2F700721C48 /* Products */,
 				C00CC8D12DA6D9A300721C48 /* data */,
+				C01B45702DA9474D00B5A57E /* Traverse.app */,
 			);
-			sourceTree = "<group>";
-		};
-		C00CC8BC2DA6D2F700721C48 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C00CC8BB2DA6D2F700721C48 /* Traverse.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,9 +100,10 @@
 			);
 			name = Traverse;
 			packageProductDependencies = (
+				C09CAB142DA7D8CF006C6BFA /* FlatBuffers */,
 			);
 			productName = Traverse;
-			productReference = C00CC8BB2DA6D2F700721C48 /* Traverse.app */;
+			productReference = C01B45702DA9474D00B5A57E /* Traverse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,8 +131,11 @@
 			);
 			mainGroup = C00CC8B22DA6D2F700721C48;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C09CAB132DA7D8CF006C6BFA /* XCRemoteSwiftPackageReference "flatbuffers" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C00CC8BC2DA6D2F700721C48 /* Products */;
+			productRefGroup = C00CC8B22DA6D2F700721C48;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -281,6 +306,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X25DCDHHS7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
@@ -289,6 +315,7 @@
 				GCC_WARN_SHADOW = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = include/;
+				INFOPLIST_FILE = data/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -338,6 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X25DCDHHS7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
@@ -346,6 +374,7 @@
 				GCC_WARN_SHADOW = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = include/;
+				INFOPLIST_FILE = data/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -398,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C09CAB132DA7D8CF006C6BFA /* XCRemoteSwiftPackageReference "flatbuffers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/flatbuffers.git";
+			requirement = {
+				branch = v25.1.24;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C09CAB142DA7D8CF006C6BFA /* FlatBuffers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C09CAB132DA7D8CF006C6BFA /* XCRemoteSwiftPackageReference "flatbuffers" */;
+			productName = FlatBuffers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C00CC8B32DA6D2F700721C48 /* Project object */;
 }
