@@ -1,0 +1,32 @@
+
+{
+    "type" : "FeatureCollection", "features" : [ {
+        "id" : "428d90ea-0cae-4861-b8b7-087c57c35848",
+        "type" : "Feature",
+        "feature_type" : "unit",
+        "properties" : {
+            "category" : "restroom",
+            "restriction" : null,
+            "accessibility" : ["wheelchair"],
+            "name" : {"en" : "Restroom 1"},
+            "alt_name" : {"en" : "R1"},
+            "display_point" : {
+                "type" : "Point",
+                "coordinates" : [ 55.156900789449935, 25.09129836564304 ],
+            },
+            "level_id" : "6e447519-448d-471c-937e-df1b13463c3d"
+        },
+        "geometry" : {
+            "coordinates" : [[
+                [ 55.15681557179158, 25.09131737777497 ],
+                [ 55.15692491521585, 25.091239164094688 ],
+                [ 55.1570041445608, 25.09130116654559 ],
+                [ 55.15698673818824, 25.091334742680985 ],
+                [ 55.15693912311838, 25.09130578376471 ],
+                [ 55.15685855755544, 25.09137938336282 ],
+                [ 55.15681557179158, 25.09131737777497 ]
+            ]],
+            "type" : "Polygon"
+        }
+    } ]
+}

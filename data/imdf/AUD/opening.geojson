@@ -1,0 +1,32 @@
+{
+    "type" : "FeatureCollection", "features" : [ {
+        "id" : "737220f5-9b8f-4ca6-b2fb-cd0b9731c51b",
+        "type" : "Feature",
+        "feature_type" : "opening",
+        "properties" : {
+            "category" : "pedestrian",
+            "accessibility" : ["wheelchair"],
+            "access_control" : null,
+            "door" : {
+                "automatic" : false,
+                "material" : "glass",
+                "type" : "movablepartition"
+            },
+            "name" : {"en" : "Entrance A"},
+            "alt_name" : null,
+            "display_point" : {
+                "type" : "Point",
+                "coordinates" : [ 55.15725098777227, 25.091260358913544 ]
+            },
+            "level_id" : "6e447519-448d-471c-937e-df1b13463c3d"
+        },
+        "geometry" : {
+            "coordinates" : [
+                [ 55.15722623899774, 25.091235998284446 ],
+                [ 55.15728443315638, 25.09128855325372 ],
+                [ 55.15722926651782, 25.091232750194635 ]
+            ],
+            "type" : "LineString"
+        }
+    } ]
+}

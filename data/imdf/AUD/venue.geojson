@@ -1,0 +1,32 @@
+{
+    "type" : "FeatureCollection", "features" : [ {
+        "id" : "285caf9d-0286-4ed5-a66c-e2473dc59086",
+        "type" : "Feature",
+        "feature_type" : "venue",
+        "properties" : {
+            "category" : "university",
+            "restriction" : null,
+            "name" : {"en" : "American University in Dubai"},
+            "alt_name" : null,
+            "hours" : "Mo-Fr 08:30-20:00",
+            "website" : "http://aud.edu",
+            "phone" : "+971 4 399 9000",
+            "display_point" : {
+                "type" : "Point",
+                "coordinates" : [ 55.1558216202757, 25.09139721749517 ]
+            },
+            "address_id" : "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+        },
+        "geometry" : {
+            "coordinates" : [[
+                [ 55.15621164109248, 25.088801101372226 ],
+                [ 55.15858430415162, 25.090708557783614 ],
+                [ 55.158584179126194, 25.090888173664055 ],
+                [ 55.155863662122954, 25.09350561162411 ],
+                [ 55.15359826583591, 25.09154568288477 ],
+                [ 55.15621164109248, 25.088801101372226 ]
+            ]],
+            "type" : "Polygon"
+        }
+    } ]
+}

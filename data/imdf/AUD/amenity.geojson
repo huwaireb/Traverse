@@ -1,0 +1,24 @@
+
+{
+    "type" : "FeatureCollection", "features" : [ {
+        "id" : "2a7362a8-4fd6-4978-b448-6ec4f1398294",
+        "type" : "Feature",
+        "feature_type" : "amenity",
+        "properties" : {
+            "category" : "restroom",
+            "accessibility" : ["wheelchair"],
+            "name" : {"en" : "Restroom 1"},
+            "alt_name" : {"en" : "R1"},
+            "phone" : null,
+            "website" : null,
+            "hours" : null,
+            "unit_ids" : ["428d90ea-0cae-4861-b8b7-087c57c35848"],
+            "address_id" : "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "correlation_id" : null
+        },
+        "geometry" : {
+            "coordinates" : [ 55.156900789449935, 25.09129836564304 ],
+            "type" : "Point"
+        }
+    } ]
+}
