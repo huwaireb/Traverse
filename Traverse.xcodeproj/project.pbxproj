@@ -16,34 +16,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C07CA7032DB654AB00D36CED /* Exceptions for "include" folder in "Traverse" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				.gitattributes,
-			);
-			target = C0A9B8BC2DB4D0C90049A320 /* Traverse */;
-		};
 		C0E757962DB4E76700699580 /* Exceptions for "data" folder in "Traverse" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				imdf/AUD.imdf_extracted/address.geojson,
-				imdf/AUD.imdf_extracted/manifest.json,
+				imdf/AUD/address.geojson,
+				imdf/AUD/amenity.geojson,
+				imdf/AUD/building.geojson,
+				imdf/AUD/level.geojson,
+				imdf/AUD/manifest.geojson,
+				imdf/AUD/opening.geojson,
+				imdf/AUD/unit.geojson,
+				imdf/AUD/venue.geojson,
 				Info.plist,
 				Secrets.example.xcconfig,
+				"typst/main-screen.png",
+				"typst/navigation-route.png",
+				"typst/search-interface.png",
 			);
 			target = C0A9B8BC2DB4D0C90049A320 /* Traverse */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C05920162DB565DA000100A7 /* include */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C07CA7032DB654AB00D36CED /* Exceptions for "include" folder in "Traverse" target */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		C0A9B8BF2DB4D0C90049A320 /* src */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = src;
@@ -75,7 +69,6 @@
 		C0A9B8B42DB4D0C90049A320 = {
 			isa = PBXGroup;
 			children = (
-				C05920162DB565DA000100A7 /* include */,
 				C0A9B8CB2DB4D0D60049A320 /* data */,
 				C0A9B8BF2DB4D0C90049A320 /* src */,
 				C0A9B8BE2DB4D0C90049A320 /* Products */,
@@ -106,7 +99,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C05920162DB565DA000100A7 /* include */,
 				C0A9B8BF2DB4D0C90049A320 /* src */,
 				C0A9B8CB2DB4D0D60049A320 /* data */,
 			);
