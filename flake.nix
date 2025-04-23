@@ -1,6 +1,6 @@
 {
   description = ''
-    huwaireb/Traverse: An iOS App to navigate campuses, using IMDF. Built with Xcode (SP)  Topics
+    huwaireb/Traverse: An iOS App to navigate campuses, using IMDF. Built with Xcode (SP)
   '';
 
   outputs =
@@ -19,7 +19,7 @@
         {
           devShells.default = pkgs.mkShell.override { inherit stdenv; } {
             packages = builtins.attrValues {
-              inherit (pkgs) typst tinymist;
+              inherit (pkgs) typst tinymist typstyle;
               ccls = pkgs.ccls.override { inherit llvmPackages; };
             };
           };
